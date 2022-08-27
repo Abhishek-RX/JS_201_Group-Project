@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create An Account</title>
+  <script src="https://kit.fontawesome.com/ce38e0eef3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./nevbar.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+    * {
+      margin: 0px;
+      padding: 0px;
+      font-family: poopins Sans, sans-serif;
+    }
+
+    /* ******************************  for signup page   ************************************************* */
+    #gautam {
+      margin: auto;
+      width: 25%;
+      margin-top: 100px;
+    }
+
+    #gautam>.sonk>h1 {
+      text-align: center;
+      font: 30px;
+      font-family: poppins;
+      color: #161616;
+    }
+
+    #gautam>.sonks {
+      width: 100%;
+      margin: auto;
+    }
+
+    #gautam>.sonks>a {
+      display: flex;
+      height: 40px;
+      border-radius: 4px;
+      border-color: #2d5073;
+      text-decoration: none;
+      color: #ffffff;
+      font-family: "merwheather Sans", sans-serif;
+      background-color: #3d5998;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    #gautam>.sonks>a>i {
+      font-size: 27px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid transparent;
+      padding: 5px 15px;
+    }
+
+    #gautam>.sonks>a>span {
+      font-size: 18px;
+      margin-left: 15px;
+    }
+
+    #gautam>.sonks:nth-child(3)>a {
+      background-color: #dd4b39;
+    }
+
+    #gautam>.sonks:nth-child(3)>a>i {
+      padding: 10px;
+    }
+
+    #sonkp {
+      margin: 10px 0px;
+    }
+
+    /* ********************************* form tag **********************************/
+    #sonkp>#gform>input {
+      height: 40px;
+      width: 99%;
+      border: 0.1px solid lightgray;
+    }
+
+    #sonkp>#gform>p {
+      color: #7a7a7a;
+      font-size: 13px;
+      font-family: "Poppins";
+      margin: 0 0 5px;
+      padding: 0 0 7px;
+      margin: 10px 0px;
+    }
+
+    #sonkp>#gform>input:focus {
+      outline-color: #e5b95f;
+    }
+
+    #sonkp>#gform>p>span {
+      color: red;
+    }
+
+    #sonkp>#gform>input:last-child {
+      background-color: #e5b95f;
+      font-size: 1.1em;
+      height: 40px;
+      border: none;
+      width: 100%;
+    }
+
+    .sonk {
+      width: 1px solid pink;
+      margin: auto;
+    }
+
+    /* ********************************** hr line ********************** */
+    .ram {
+      display: grid;
+      margin: auto;
+      margin: 20px 0px 20px 0px;
+      justify-content: space-between;
+      align-items: center;
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "a c b";
+      font-family: poppins;
+    }
+
+    .ram>hr:first-child {
+      grid-area: a;
+      height: 1px;
+      width: 130%;
+    }
+
+    .ram>hr:last-child {
+      grid-area: b;
+      height: 1px;
+    }
+
+    .ram>p {
+      grid-area: c;
+      margin-left: 50%;
+      width: 70%;
+      margin-top: -5px;
+      font-size: 16px;
+      font-family: sans-serif;
+    }
+
+    .son>a>button {
+      width: 100%;
+      background-color: #e5b95f;
+      height: 40px;
+      font-size: 1.1em;
+      border: none;
+    }
+
+    /* ******************************* hover ************************** */
+    .son>a>button:hover {
+      background-color: #000;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+    }
+
+    #sonkp>#gform>input:last-child:hover {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    #gautam>.sonks>a:hover {
+      background-color: transparent whitesmoke;
+    }
+
+    /* ********************************************************* */
+  </style>
+</head>
+
+<body>
+  <div id="Navbar" style="margin-top: -100px">
+    <div id="first">
+      <p>
+        <a style="text-decoration: none; color: #e5b95f" href="./The_Make.html">SUBSCRIBE NOW
+        </a>
+      </p>
+    </div>
+    <div id="logo">
+      <a href="./index.html"> <img
+          src=""
+          alt=""></a>
+    </div>
+    <div id="tools">
+      <div>
+        <i class="fa-solid fa-magnifying-glass" id="search"></i>
+      </div>
+      <div>
+        <i class="fa-solid fa-heart"></i>
+      </div>
+      <div class="dropdown">
+        <i class="fa-solid fa-circle-user"></i>
+        <div class="dropdown_menu">
+          <a href="#">Languages: En</a>
+          <a href="#">Checkout</a>
+          <a href="./signin.html">Sign In</a>
+          <a href="./Create An Account.html">Create an Account</a>
+        </div>
+      </div>
+      <div>
+        <p class="su_qun">0</p>
+        <i class="fa-solid fa-cart-shopping" id="cart_opan"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- *******************************************************nev end******************************** -->
+  <div id="gautam">
+    <div class="sonk">
+      <h1>Create An Account</h1>
+    </div>
+    <div class="sonks">
+      <a href="https://www.facebook.com/">
+        <span>Sign in with Facebook</span>
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+    </div>
+    <div class="sonks">
+      <a href="https://www.google.com/gmail/">
+        <span>Sign in with Google</span>
+        <i class="fa-brands fa-google"></i>
+      </a>
+    </div>
+    <div id="result"></div>
+    <div id="sonkp">
+      <form id="gform">
+        <p>First Name <span>*</span></p>
+        <input id="fname" type="text" name="fname" />
+        <p>Last Name <span>*</span></p>
+        <input id="Lname" type="text" name="Lname" />
+        <p>Email Address <span>*</span></p>
+        <input id="email" type="email" name="email" />
+        <p>Password <span>*</span></p>
+        <input id="password" type="password" name="password" />
+        <p id="req">Required Fields <span>*</span></p>
+        <input type="submit" value="Creat an Account" />
+      </form>
+    </div>
+    <div class="ram">
+      <hr />
+      <p>Or</p>
+      <hr />
+    </div>
+    <div class="son">
+      <a href="signin.html"> <button>Sign in</button></a>
+    </div>
+  </div>
+</body>
+
+</html>
+<script src="creat.js"></script>
+<script src="./nevbar.js"></script>
