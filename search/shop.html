@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 170%;
+    }
+
+    #body {
+        display: grid;
+        grid-template-columns: 13% 30% 18%;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+
+    #box {
+        display: grid;
+        row-gap: 2%;
+
+    }
+
+    #details {
+        display: grid;
+    }
+   #image{
+    width: 100%;
+    height: 600px;
+    overflow: scroll;
+   }
+   #image::-webkit-scrollbar{
+    width: 1em;
+    
+   }
+  #images::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+   #images::-webkit-scrollbar-thumb{
+    outline: 1px solid black;
+    background-color: darkgrey;
+   }
+    #image>img {
+        width: 100%;
+    }
+
+    #details>#btn {
+        background-color: black;
+        color: white;
+        height: 40px;
+        font-size: 12px;
+        padding: 8px 12px;
+        cursor: pointer;
+
+    }
+
+    .details-size {
+        display: flex;
+        justify-content: space-between;
+        font-size: 9px;
+    }
+
+    #details-middle2 {
+        display: flex;
+        justify-content: space-between;
+        font-size: 11px;
+        color: grey;
+    }
+
+    #btn+div {
+        display: grid;
+        font-size: 11px;
+        color: grey;
+    }
+
+    #left {
+        display: grid;
+        
+        /* border: 1px solid red; */
+        height: fit-content;
+       margin-bottom: 50%;
+
+    }
+    #parent-left{
+        display: grid;
+        justify-content: end;
+        align-items: flex-end;
+        padding: 10px;
+        /* border: 1px solid red; */
+    }
+</style>
+
+<body>
+    <div id="body">
+        <div id="parent-left">
+            <div id="left">
+                <h3 style="font-size:13px ;">MATERIALS, CARE AND <br> ORIGIN</h3>
+                <p style="font-size:11px ;">ORIGIN</p>
+                <p style="font-size:10px ;">
+                    We work alongside our suppliers, workers, unions and international bodies to develop a supply chain
+                    that
+                    respects and promotes human rights, contributing to the United Nations Sustainable Development
+                    Goals.
+                </p>
+            </div>
+        </div>
+        <div id="image">
+
+        </div>
+        <div id="details">
+
+            <div id="box"></div>
+
+            <div id="details-middle">
+                <hr>
+                <div class="details-size">
+                    <p>XS</p>
+                    <p></p>
+                </div>
+                <div class="details-size">
+                    <p>S</p>
+                    <p>Similar products</p>
+                </div>
+                <div class="details-size">
+                    <p>M</p>
+                    <p>Similar products</p>
+                </div>
+                <div class="details-size">
+                    <p>L</p>
+                    <p>Similar products</p>
+                </div>
+                <div class="details-size">
+                    <p>XL</p>
+                    <p>Similar products</p>
+                </div>
+                <div class="details-size">
+                    <p>XXL</p>
+                    <p>Similar products</p>
+                </div>
+                <hr>
+                <div id="details-middle2">
+                    <p>FIND YOUR SIZE</p>
+                    <p>SIZE GUIDE</p>
+                </div>
+            </div>
+            <button id="btn">ADD TO BAG</button>
+            <div>
+                <p>CHECK-IN STORE AVABILITY</p>
+                <p>DELIVERY, EXCHANGES AND RETURNS</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="shop.js"></script>
