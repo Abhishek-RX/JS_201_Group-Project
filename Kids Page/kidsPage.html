@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        transition: all 0.2s linear;
+        font-family: tahoma;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        overflow-x: inherit;
+      }
+
+      .sec {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3em;
+        color: #777;
+        background: #f9f9f9;
+        letter-spacing: 2px;
+        position: relative;
+      }
+
+      .sec img {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #business img {
+        height: 150wh;
+        width: 150vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sec video {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .sec:nth-child(odd) {
+        background: #ddd;
+      }
+
+      /* #below_heading{
+    position: absolute;
+    top: 0;
+} */
+
+      .navbar {
+        position: fixed;
+        top: 50%;
+        right: 30px;
+        transform: translateY(130%);
+        z-index: 1000;
+      }
+
+      .navbar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .navbar ul li {
+        width: 200px;
+        position: relative;
+        text-align: right;
+      }
+
+      .navbar ul li .dot {
+        color: black;
+        display: block;
+        padding-bottom: 20px;
+      }
+
+      .navbar ul li .dot span {
+        display: inline-block;
+        background: #f44336;
+        letter-spacing: 1px;
+        padding: 10px 25px;
+        margin-right: 30px;
+        border-radius: 3px;
+        transform: translateX(30px);
+        opacity: 0;
+      }
+
+      .navbar ul li:hover .dot span {
+        transform: translateX(0px);
+        opacity: 1;
+      }
+
+      .navbar ul li .dot::before,
+      .navbar ul li .dot::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        border-radius: 50%;
+        display: block;
+        transition: 0.2s ease-out;
+      }
+
+      .navbar ul li .dot::before {
+        height: 5px;
+        width: 5px;
+        border: 2px solid #333;
+        right: 0;
+        transform: translateY(-50%);
+      }
+
+      .navbar ul li .dot.active::before,
+      .navbar ul li:hover .dot::before {
+        border-color: black;
+        background: black;
+      }
+
+      .navbar ul li .dot.active::after,
+      .navbar ul li:hover .dot::after {
+        transform: translateY(-50%) scale(1);
+      }
+
+      body {
+        overflow: hidden; /* Hide scrollbars */
+        text-decoration: none;
+      }
+
+      #below_heading {
+        width: 40%;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        top: 93%;
+        left: 30%;
+        font-weight: bold;
+        font-size: 13px;
+        font-family: sans-serif;
+      }
+
+      #below_heading a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar area -->
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a
+            href="#samrt_casual"
+            class="dot active"
+            data-scroll="home"
+            data-bs-interval="200"
+          >
+          </a>
+        </li>
+        <li>
+          <a
+            href="#business"
+            class="dot"
+            data-scroll="service"
+            data-bs-interval="200"
+          >
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#wfh"
+            class="dot"
+            data-scroll="project"
+            data-bs-interval="200"
+          >
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#contact"
+            class="dot"
+            data-scroll="contact"
+            data-bs-interval="200"
+          >
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- slide area -->
+    <section class="sec" id="samrt_casual">
+      <img
+        src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-back-to-school/subhome-xmedia-02//w/1366/IMAGE-landscape-fill-3ca3ce48-bd38-4a53-9982-5f8a7ef77f1d-default_0.jpg?ts=1660317767007"
+        alt=""
+      />
+    </section>
+
+    <section class="sec" id="business">
+      <img
+        src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-girl/subhome-xmedia-33//w/1366/IMAGE-landscape-fill-41b4abf6-590d-40bb-8553-d6b67a63c761-default_0.jpg?ts=1661158659040"
+        alt=""
+      />
+    </section>
+
+    <section class="sec" id="wfh">
+      <img
+        src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-boy/subhome-xmedia-34//w/1366/IMAGE-landscape-fill-8f6e7e5c-0d83-49be-9d06-40a74c0e5531-default_0.jpg?ts=1661410912040"
+        alt=""
+      />
+    </section>
+
+    <section class="sec" id="wfh">
+      <img
+        src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-babygirl/subhome-xmedia-33//w/1366/IMAGE-landscape-fill-ff49c5f3-1cdb-4c2f-bf3a-382325a9c74e-default_0.jpg?ts=1660835085941"
+        alt=""
+      />
+    </section>
+
+    <section class="sec" id="wfh">
+      <img
+        src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-mini/subhome-xmedia-34//w/1366/IMAGE-landscape-fill-b7a7f561-5bea-43df-b216-c2bdd0263af0-default_0.jpg?ts=1661411220233"
+        alt=""
+      />
+    </section>
+
+    <section class="sec" id="contact">Footer</section>
+
+    <!-- below heading area -->
+    <div id="below_heading">
+      <a href="#samrt_casual"><p>SMART CASUAL</p></a>
+      <a href="#business"><p>BUSINESS</p></a>
+      <a href="#wfh"><p>WORK FROM HOME</p></a>
+    </div>
+
+    <!-- script area -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      charset="utf-8"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(window).on("scroll", function () {
+          var link = $(".navbar a.dot");
+          var top = $(window).scrollTop();
+
+          $(".sec").each(function () {
+            var id = $(this).attr("id");
+            var height = $(this).height();
+            var offset = $(this).offset().top - 150;
+            if (top >= offset && top < offset + height) {
+              link.removeClass("active");
+              $(".navbar")
+                .find('[data-scroll="' + id + '"]')
+                .addClass("active");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
